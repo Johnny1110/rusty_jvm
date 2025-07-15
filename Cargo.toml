@@ -1,0 +1,27 @@
+[package]
+name = "rusty_jvm"
+version = "0.1.0"
+edition = "2021"
+authors = ["Johnny Wang"]
+license = "MIT"
+description = "A JVM implementation in Rust for educational purposes"
+repository = "https://github.com/Johnny1110/rusty_jvm/tree/main"
+
+[dependencies]
+thiserror = "1.0"
+log = "0.4"
+env_logger = "0.10"
+byteorder = "1.5"
+clap = { version = "4.0", features = ["derive"] }
+
+[dev-dependencies]
+tempfile = "3.0"
+pretty_assertions = "1.4"
+
+[[bin]]
+name = "rusty_jvm"
+path = "src/main.rs"
+
+[lib]
+name = "rusty_jvm"
+path = "src/lib.rs"
